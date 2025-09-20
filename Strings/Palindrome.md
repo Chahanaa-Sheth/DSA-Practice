@@ -9,7 +9,8 @@
 (convert the string to lowercase first so case insensitivity isn't an issue)
 (can reverse the string using a loop)
 (string.equals(string) returns a boolean value)
-
+(Time Complexity: O(n)
+Space Complexity: O(n))
 
 ## 🧑‍💻 Solution ( Java )
 ```java
