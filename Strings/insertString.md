@@ -64,3 +64,44 @@ class GFG {
                                           index));
     }
 }
+// there are three methods - 
+Without using any pre-defined method Approach:
+Get the Strings and the index.
+Create a new String
+Traverse the string till the specified index and copy this into the new String.
+Copy the String to be inserted into this new String
+Copy the remaining characters of the first string into the new String
+Return/Print the new String
+
+Using StringBuilder Approach:
+Get the Strings and the index.
+Create a StringBuilder object
+Append the first string till the specified index
+Append the String to be inserted
+Append the remaining characters of the first string
+Return/Print the StringBuilder object
+
+Using StringBuffer Approach:
+Get the Strings and the index.
+Create a StringBuffer object
+Append the first string till the specified index
+Append the String to be inserted
+Append the remaining characters of the first string
+Return/Print the StringBuffer object
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String originalString = "Hello World";
+        String stringToBeInserted = "Java ";
+        int index = 6;
+        System.out.println(insertString(originalString, stringToBeInserted, index));
+    }
+    public static String insertString(String originalString,
+                                      String stringToBeInserted,
+                                      int index) {
+        StringBuilder sb = new StringBuilder(originalString);
+        sb.insert(index, stringToBeInserted);
+        return sb.toString();
+    }
+}
